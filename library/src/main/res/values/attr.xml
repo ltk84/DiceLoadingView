@@ -36,7 +36,7 @@
         <attr name="pointColor" format="color|reference"></attr>
         <attr name="borderColor" format="color|reference"></attr>
         <attr name="bgColor" format="color|reference"></attr>
-        <attr name="number" >
+        <attr name="diceNumber" >
             <flag name = "one" value = "1" />
             <flag name = "two" value = "2" />
             <flag name = "three" value = "3" />
