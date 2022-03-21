@@ -91,7 +91,7 @@ public class DiceView extends View {
         mPointColor = typedArray.getColor(R.styleable.DiceView_pointColor, DEFAULT_COLOR);
         mBorderColor = typedArray.getColor(R.styleable.DiceView_borderColor, DEFAULT_COLOR);
         mBgColor = typedArray.getColor(R.styleable.DiceView_bgColor, DEFAULT_BG_COLOR);
-        mNumber = typedArray.getInteger(R.styleable.DiceView_number, NUMBER_ONE);
+        mNumber = typedArray.getInteger(R.styleable.DiceView_diceNumber, NUMBER_ONE);
 
         if (mNumber < 1){
             mNumber = 1;

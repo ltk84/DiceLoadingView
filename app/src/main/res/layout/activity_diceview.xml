@@ -14,7 +14,7 @@
 
         <com.iigo.library.DiceView
             android:layout_marginTop="10dp"
-            app:number="one"
+            app:diceNumber="one"
             app:bgColor="@android:color/white"
             app:borderColor="@color/colorPrimary"
             app:pointColor="@color/colorPrimary"
@@ -23,31 +23,31 @@
 
         <com.iigo.library.DiceView
             android:layout_marginTop="10dp"
-            app:number="two"
+            app:diceNumber="two"
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
         <com.iigo.library.DiceView
             android:layout_marginTop="10dp"
-            app:number="three"
+            app:diceNumber="three"
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
         <com.iigo.library.DiceView
-            app:number="four"
+            app:diceNumber="four"
             android:layout_marginTop="10dp"
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
         <com.iigo.library.DiceView
             android:layout_marginTop="10dp"
-            app:number="five"
+            app:diceNumber="five"
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
         <com.iigo.library.DiceView
             android:layout_marginTop="10dp"
-            app:number="six"
+            app:diceNumber="six"
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
