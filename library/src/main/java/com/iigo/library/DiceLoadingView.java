@@ -374,7 +374,7 @@ public class DiceLoadingView extends ViewGroup {
         mValueAnimator.setDuration(mDuration);
         mValueAnimator.setRepeatMode(ValueAnimator.RESTART);
         mValueAnimator.setRepeatCount(mRepeatCount);
-        // mValueAnimator.start();
+        mValueAnimator.start();
     }
 
     @Override
