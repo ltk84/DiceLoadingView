@@ -87,6 +87,7 @@ public class DiceLoadingView extends ViewGroup {
     private DiceView[] mDiceViews = new DiceView[FIXED_CHILD_COUNT];
     private TimeInterpolator mInterpolator = new AccelerateDecelerateInterpolator();
     private long mDuration = DEFAULT_DURATION;
+    private int mRepeatCount = ValueAnimator.INFINITE;
 
     public DiceLoadingView(Context context) {
         this(context, null);
@@ -372,7 +373,7 @@ public class DiceLoadingView extends ViewGroup {
         mValueAnimator.setInterpolator(mInterpolator);
         mValueAnimator.setDuration(mDuration);
         mValueAnimator.setRepeatMode(ValueAnimator.RESTART);
-        mValueAnimator.setRepeatCount(ValueAnimator.INFINITE);
+        mValueAnimator.setRepeatCount(mRepeatCount);
         mValueAnimator.start();
     }
 
@@ -760,6 +761,15 @@ public class DiceLoadingView extends ViewGroup {
      * */
     public void setDuration(long duration) {
         this.mDuration = duration;
+        setupAnimator();
+    }
+
+    public int getRepeatCount() {
+        return mRepeatCount;
+    }
+
+    public void setRepeatCount(int count) {
+        this.mRepeatCount = count;
         setupAnimator();
     }
 }
